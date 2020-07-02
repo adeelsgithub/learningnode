@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template overview</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-size: 16px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h1{
+        text-align: center;
+        margin: 20px 0;
+    }
+    .mainGrid{
+        display: grid;
+        grid-template-columns:repeat(5,1fr);
+        height: 100px;
+        align-items: center;
+        justify-items: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        margin: 40px 10px;
+    }
+    a , a:visited , a:active{
+        text-decoration: none;
+        color: #000;
+    }
+</style>
+</head>
+<body>
+    <h1>NODE FARM</h1>
+    {%CARDS%}
+</body>
+</html>
